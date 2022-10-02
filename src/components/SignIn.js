@@ -4,15 +4,17 @@ import { auth } from '../index.js'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { doc, getDoc, setDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import { useState } from 'react';
+import { uploadDefault } from '../getProfilePic';
 
-const Signed = async (auth, username, email, password, db, changeState) => {
+const Signed = async (auth, username, email, password, db, changeState, changePP) => {
   try {
     if (username) {
       const q = query(collection(db, "users"), where("username", "==", username));
       const docSnap = await getDocs(q);
       if (docSnap.empty) {
         await createUserWithEmailAndPassword(auth, email, password);
-        setDoc(doc(db, 'users', auth.currentUser.uid), { username: username, profilePic: 'https://cdn-icons-png.flaticon.com/512/847/847969.png' }).catch(error => console.log(error));
+        await setDoc(doc(db, 'users', auth.currentUser.uid), { username: username, profilePic: ' ' }).catch(error => console.log(error));
+        await uploadDefault(auth.currentUser.uid, changePP, db);
         changeState('SignIn');
       }
       else {
@@ -75,7 +77,7 @@ const SignIn = (props) => {
               <input type="email" id="emailInput" className='inputche' placeholder="email@example.com.."></input>
               <input type="submit" id="submit" value="Submit" className='inputche' onClick={() =>
                 Signed(auth, document.getElementById("usernameInput").value, document.getElementById("emailInput").value,
-                  document.getElementById("passwordInput").value, props.db, changeState)}></input>
+                  document.getElementById("passwordInput").value, props.db, changeState, props.changePP)}></input>
               <p id="errorP" style={{ fontSize: "20px", color: "red", marginBottom: "0", marginTop: "5px", fontWeight: "normal" }}></p>
             </div>
           }

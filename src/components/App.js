@@ -46,18 +46,18 @@ function App() {
       <Navbar lightTheme={lightTheme} changeTheme={changeTheme} authot={authot} changeAuth={changeAuth} currentUser={currentUser} 
         profilePic={profilePic} changePP={changePP} db={db}></Navbar>
       <Routes>
-        <Route exact path=/*'/' - replaced for gh-pages*/ '/Chatster-chat_app/'element={ !authot ?
-          <SignIn db={db} changeAuth={changeAuth} lightTheme={lightTheme} changeUser={changeUser}></SignIn> :
+        <Route exact path=/* '/' - replaced for gh-pages */ '/Chatster-chat_app/'element={ !authot ?
+          <SignIn db={db} changeAuth={changeAuth} lightTheme={lightTheme} changeUser={changeUser} changePP={changePP}></SignIn> :
           <Navigate replace to="/Lobby-select"></Navigate>}>
         </Route>
         <Route exact path='/Lobby-select' element={ authot ? (<div>
           <RoomCreate showCreate={showCreate} changeShow={changeShow} newRoom={newRoom} lightTheme={lightTheme}></RoomCreate>
           <Lobby chatrooms={chatrooms} changeShow={changeShow} changeRoom={changeRoom} rtdb={rtdb} lightTheme={lightTheme}></Lobby> </div>):
-            <Navigate replace to=/*'/' - replaced for gh-pages*/ '/Chatster-chat_app/'></Navigate>}>
+            <Navigate replace to=/* '/' - replaced for gh-pages */ '/Chatster-chat_app/'></Navigate>}>
         </Route>
         <Route path='/chatroom/:id' element={ authot ? 
           <Room currentRoom={currentRoom} rtdb={rtdb} db={db} lightTheme={lightTheme} profilePic={profilePic} changePP={changePP}></Room> :
-          <Navigate replace to=/*'/' - replaced for gh-pages*/ '/Chatster-chat_app/'></Navigate>}>
+          <Navigate replace to=/* '/' - replaced for gh-pages */ '/Chatster-chat_app/'></Navigate>}>
         </Route>
       </Routes>
     </Router>
