@@ -1,0 +1,84 @@
+/* @media screen and(max-width: 840px){
+  .App-header .center p{
+    display: none;
+  }
+} */
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  margin-bottom:27vh;
+}
+
+.center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header img{
+  object-fit: fill;
+  width: calc(19vw + 34vh);
+}
+
+.App-header .inputche{
+  background-color: white;
+  border: solid white 0.25vh;
+  color: black;
+  width: 25vh;
+  height: 3vh;
+  border-radius: 1vh;
+  margin-block: 8px;
+  display:block;
+  box-shadow: 5px 5px 0 rgb(34, 34, 34);
+}
+
+.App-header #username::placeholder{
+  color: rgb(129, 129, 129);
+}
+.App-header .center p{
+  margin: 0;
+  margin-bottom: 1vw;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+}
+.App-header .button1{
+  height: 50px;
+  border: solid white 0.25vh;
+  border-radius: 1vh;
+  padding-inline: 30px;
+  margin-inline: 10px;
+  display:inline;
+  font-size: 25px;
+  box-shadow: 5px 5px 0 rgb(34, 34, 34);
+}
+.App-header .button1:active{
+  transform: translateY(4px);
+  box-shadow: none;
+  background-color:rgb(200, 200, 200);
+}
+.App-header .button1 p{
+  margin: 0;
+  color: rgb(26, 26, 26);
+}
+.darkmode{
+  background-color: darkslategray;
+}
+#formcheto1{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-block: 20px;
+  padding-inline: 25px;
+  border-radius: 20px;
+}
+#submit:active{
+  transform: translateY(4px);
+  box-shadow: none;
+}

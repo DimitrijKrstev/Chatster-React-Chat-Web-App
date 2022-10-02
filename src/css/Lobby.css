@@ -1,0 +1,118 @@
+#Lobby {
+    margin-block: 3vh;
+    border-radius: 20px;
+    width: calc(15.5vh + 55vw);
+    min-height: 88.25vh;
+    overflow: show;
+}
+
+#Lobby h1 {
+    margin: 0;
+    font-size: calc(3.9vw + 3vh);
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 2px 0 black;
+    font-family: 'Source sans pro', sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#Lobby h2{
+    font-family: 'Source sans pro', sans-serif;
+}
+
+.button{
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    border: solid 1px black;
+    box-shadow: 3px 3px 0 black;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.button:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#Lobby img{
+    width: 40px;
+    height: 45px;
+}
+
+.button p{
+    padding-inline: 10px;
+}
+
+#Lobby-select {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-inline: calc(1vh + 1.5vw);
+    background-color: rgba(177, 177, 177, 0.3);
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 120vh;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#Lobby-select::-webkit-scrollbar { 
+    display: none;
+}
+
+.room{
+    margin-top: 15px;
+    background-color: rgba(144, 144, 144, 0.2);
+    border-radius:10px;
+    padding: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    margin-inline: 20px;
+}
+
+#Lobby-select .room:last-of-type{
+    margin-bottom: 15px;
+}
+
+.room h2, .room h3, .room p{
+    font-weight: normal;
+    margin: 0;
+}
+
+.room h2{
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 4px 2px 0 black;
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+    font-size: calc(4vh + 1vw);
+}
+.room h3{
+    font-size: 20px;
+    color: black;
+}
+.room p{
+    font-size: 15px;
+    color: black;
+}
+.room p:last-of-type{
+    font-size: 12px;
+    color: rgb(63, 63, 63);
+}
+a{
+    text-decoration: none;
+}
+.room:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}

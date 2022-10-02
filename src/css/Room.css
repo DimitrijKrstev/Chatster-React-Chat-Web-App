@@ -1,0 +1,236 @@
+#container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    border-top: solid 0.1vh black;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    border: solid 1px black;
+    padding-inline: 10px;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+#roomInfo{
+    display:flex;
+}
+
+.link img{
+    width: 30px;
+}
+
+.link p{
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#messages{
+    overflow-y: scroll;
+    max-width: 100%;
+    border-top: none;
+}
+
+#chatArea>* {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+
+#formcheto{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding-block: 1vh;
+}
+
+#chatInput{
+    width: 75%;
+    border-radius: 20px;
+    border: solid 0.1vh black;
+}
+
+#formcheto>* {
+    height: 4vh;
+}
+
+#chatArea button{
+    border: none;
+    background-color: inherit;
+}
+
+#submit img{
+    margin-left: 5px;
+    border-radius: 20px;
+    border: solid 0.1vh black;
+    width: 4vh;
+    background-color: white;
+    padding: inherit;
+}
+
+#users{
+    z-index: 2;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+#users::-webkit-scrollbar { 
+    display: none;
+}
+
+
+#messages{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+/* pozicioniranje */
+#headerot, #messages, #formcheto, #chatInput, #submit>* {
+    box-sizing: border-box;
+}
+#headerot {
+    height: 6vh;
+}
+#chatArea {
+    position: relative;
+}
+#messages {
+    height: 93.9vh;
+}
+#formcheto {
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
+}
+#container>* {
+    box-sizing: border-box;
+}
+#roomInfo, #users {
+    min-width: 220px;
+    flex: 0 1 20vw;
+}
+#chatArea {
+    min-width: 0;
+    flex: 0 1 60vw;
+}
+
+@media (max-width: 750px) {
+    #users, #roomInfo {
+        display: none;
+    }
+    #chatArea {
+        flex: 0 0 100vw;
+    }
+    #container {
+        flex-wrap: wrap;
+    }
+    #roomInfo {
+        height: 8vh;
+        align-items: center;
+    }
+    #chatArea>* {
+        border: none;
+    }
+}
+
+#dummy {
+    margin-bottom: 1vh;
+    flex: 0 0 10vh;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+#dummy span {
+    display: block;
+    padding-top: 2vh;
+}
+
+.sent {
+    align-self: flex-end;
+}
+.sent .author {
+    text-align: right;
+}
+.sent .profile-picture {
+    order: 2;
+    /* display: none; AKO SAKAS DA SE PRIKAZE TVOJA PROFILNA KOA PRAKJAS TRGNI GO OVA */
+}
+.sent .message-content {
+    background-color: #00a7e9;
+    color: white;
+}
+
+.inline {
+    display: flex;
+}
+.profile-picture {
+    height: 2rem;
+    width: 2rem;
+    margin: auto 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.author {
+    margin: 0;
+    margin-inline: 6px;
+}
+.received .message-content {
+    background-color: white;
+    align-self: flex-start;
+}
+.message-content {
+    border: solid 1px black;
+    border-radius: 15px;
+    box-shadow: 3px 3px rgb(100, 100, 100);
+    margin: 1px 5px;
+    display: block;
+}
+.message-content p {
+    padding: 6px 15px;
+    margin: 0;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+.message-content {
+    max-width: 36vw;
+}
+@media (max-width: 750px) {
+    .message-content {
+        max-width: calc(100vw - 96px);
+    }
+}
+.onlineUserDiv p{
+    margin: 0;
+}
+.onlineUserDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2px;
+}
+.link:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+#chatInput:focus {
+    outline-width: 0;
+}
+input{
+    outline:none;
+}
