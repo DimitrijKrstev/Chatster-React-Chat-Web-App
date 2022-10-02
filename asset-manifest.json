@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Chatster-chat_app/static/css/main.0e002e72.css",
-    "main.js": "/Chatster-chat_app/static/js/main.4fc84501.js",
+    "main.js": "/Chatster-chat_app/static/js/main.433cdb7d.js",
     "static/media/moon.png": "/Chatster-chat_app/static/media/moon.d3d1bfafeb9fe256beb5.png",
     "static/media/logo.svg": "/Chatster-chat_app/static/media/logo.b3a64821cfcc104cb997970d35cec6db.svg",
     "static/media/chat-plus.svg": "/Chatster-chat_app/static/media/chat-plus.e8f3e8aa11abf8afcae3a6eab9c37592.svg",
     "static/media/close-svgrepo-com.svg": "/Chatster-chat_app/static/media/close-svgrepo-com.ca8c67c13ad6df4a63f1856827946a47.svg",
     "index.html": "/Chatster-chat_app/index.html",
     "main.0e002e72.css.map": "/Chatster-chat_app/static/css/main.0e002e72.css.map",
-    "main.4fc84501.js.map": "/Chatster-chat_app/static/js/main.4fc84501.js.map"
+    "main.433cdb7d.js.map": "/Chatster-chat_app/static/js/main.433cdb7d.js.map"
   },
   "entrypoints": [
     "static/css/main.0e002e72.css",
-    "static/js/main.4fc84501.js"
+    "static/js/main.433cdb7d.js"
   ]
 }
