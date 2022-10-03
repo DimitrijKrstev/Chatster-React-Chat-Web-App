@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Chatster-chat_app/static/css/main.0e002e72.css",
-    "main.js": "/Chatster-chat_app/static/js/main.6fdc1c26.js",
+    "main.css": "/Chatster-chat_app/static/css/main.7579a313.css",
+    "main.js": "/Chatster-chat_app/static/js/main.cdce44a9.js",
     "static/media/moon.png": "/Chatster-chat_app/static/media/moon.d3d1bfafeb9fe256beb5.png",
     "static/media/logo.svg": "/Chatster-chat_app/static/media/logo.b3a64821cfcc104cb997970d35cec6db.svg",
     "static/media/chat-plus.svg": "/Chatster-chat_app/static/media/chat-plus.e8f3e8aa11abf8afcae3a6eab9c37592.svg",
     "static/media/close-svgrepo-com.svg": "/Chatster-chat_app/static/media/close-svgrepo-com.ca8c67c13ad6df4a63f1856827946a47.svg",
     "index.html": "/Chatster-chat_app/index.html",
-    "main.0e002e72.css.map": "/Chatster-chat_app/static/css/main.0e002e72.css.map",
-    "main.6fdc1c26.js.map": "/Chatster-chat_app/static/js/main.6fdc1c26.js.map"
+    "main.7579a313.css.map": "/Chatster-chat_app/static/css/main.7579a313.css.map",
+    "main.cdce44a9.js.map": "/Chatster-chat_app/static/js/main.cdce44a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e002e72.css",
-    "static/js/main.6fdc1c26.js"
+    "static/css/main.7579a313.css",
+    "static/js/main.cdce44a9.js"
   ]
 }

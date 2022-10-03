@@ -50,7 +50,7 @@
     width: 100%;
     display:flex;
     justify-content: center;
-    padding-block: 6px;
+    padding-block: 1vh;
 }
 
 #chatInput{
@@ -60,7 +60,7 @@
 }
 
 #formcheto>* {
-    height: 30px;
+    height: 4vh;
 }
 
 #chatArea button{
@@ -72,7 +72,7 @@
     margin-left: 5px;
     border-radius: 20px;
     border: solid 1px black;
-    width: 30px;
+    width: 4vh;
     background-color: white;
     padding: inherit;
 }
@@ -100,19 +100,19 @@
 #headerot, #messages, #formcheto, #chatInput, #submit>* {
     box-sizing: border-box;
 }
-/* #headerot {
+#headerot {
     height: 6vh;
-} */
+} 
 #chatArea {
     position: relative;
 }
 #messages {
-    height: calc(100vh - 51px);
+    height: 93.9vh;
 }
 #formcheto {
     position: absolute;
     bottom: 0;
-    height: 45px;
+    height: 6vh;
 }
 #container>* {
     box-sizing: border-box;

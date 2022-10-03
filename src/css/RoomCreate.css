@@ -17,10 +17,7 @@
     border-radius: 20px;
     margin-top: 150px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
-    font-size: calc(2.5vw + 3vh);
     color: white;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 3px 2px 0 black;
     font-family: 'Calibri', sans-serif;
     position: fixed;
 }
@@ -32,6 +29,8 @@
 }
 #roomCreate label{
     font-weight: bold;
+    text-shadow: 3px 2px 0 black;
+    font-size: calc(2.5vw + 3vh);
 }
 #roomCreate form{
     clear: both;

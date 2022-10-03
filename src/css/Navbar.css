@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 6vh;
 }
 
 #headerLeft {
@@ -11,7 +11,7 @@
 }
 
 #headerot #logoto {
-  height: 35px;
+  height: 4vh;
   padding-block: 1vh;
   padding-left: 3px;
   object-fit: scale-down;
@@ -23,7 +23,7 @@
 }
 
 #headerot #toggleot {
-  height: 25px;
+  height: 3vh;
   margin-right: 7px;
 }
 
@@ -36,8 +36,8 @@
   box-sizing: border-box;
   border: 2px solid white;
   border-radius: 50%;
-  height: 25px;
-  width: 25px;
+  height: 3vh;
+  width: 3vh;
   margin-right: 15px;
 }
 

@@ -13,13 +13,13 @@ import { getStorage } from "firebase/storage";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAxnCnkUuKTVCnGir7QCuBqiFQLWU2LPeg",
-  authDomain: "chatster-45c51.firebaseapp.com",
-  projectId: "chatster-45c51",
-  storageBucket: "chatster-45c51.appspot.com",
-  messagingSenderId: "741194242079",
-  appId: "1:741194242079:web:7f3fb1778b3aec843d9d2a",
-  databaseURL: "https://chatster-45c51-default-rtdb.europe-west1.firebasedatabase.app",
+  apiKey: "AIzaSyA1UO5EzI1Q9XjNty_ZlybBsvbTSeUm1Sk",
+  authDomain: "chatster2-3f15e.firebaseapp.com",
+  databaseURL: "https://chatster2-3f15e-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "chatster2-3f15e",
+  storageBucket: "chatster2-3f15e.appspot.com",
+  messagingSenderId: "846632892691",
+  appId: "1:846632892691:web:2f8b8567291c02710642e6"
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
